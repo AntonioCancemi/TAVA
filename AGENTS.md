@@ -1,4 +1,4 @@
-# AGENTS.MD – WhatsBot Project
+# AGENTS.MD – TAVA Project
 
 ## 🧠 Architect
 - Definisce l’architettura software globale.
