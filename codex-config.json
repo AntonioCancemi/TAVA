@@ -1,0 +1,26 @@
+{
+  "projectName": "TAVA",
+  "language": "Java, TypeScript",
+  "backendFramework": "Spring Boot 3.2+",
+  "frontendFramework": "React + TypeScript",
+  "database": "PostgreSQL",
+  "noTools": ["MapStruct", "H2"],
+  "styleGuide": {
+    "namingConvention": "camelCase per variabili/metodi, PascalCase per classi",
+    "structure": "feature-modular",
+    "backendPackages": ["auth", "tenant", "user", "bot", "booking", "dashboard", "ai", "common"],
+    "frontendFeatures": ["auth", "tenant", "bot", "booking", "dashboard", "ai"]
+  },
+  "outputStyle": "codice funzionante, testato, documentato",
+  "target": "SaaS multi-tenant vendibile",
+  "focus": "scalabilità, modularità, onboarding semplice, performance",
+  "modules": ["auth", "tenant", "user", "bot", "booking", "dashboard", "ai", "setupWizard", "landing"],
+  "featureFlags": {
+    "multiTenant": true,
+    "dragAndDropFlows": true,
+    "chatHistory": true,
+    "manualReservation": true,
+    "dashboardGamification": true,
+    "templateMarketplace": true
+  }
+}
