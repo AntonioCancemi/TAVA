@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { useAuth } from './useAuth';
+import { useAuth } from '../../hooks/useAuth';
+
+// Tenant registration with admin user creation
 
 export default function RegisterTenantPage() {
   const { doRegister } = useAuth();
@@ -9,6 +11,7 @@ export default function RegisterTenantPage() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!tenantName || !email || !password) return;
     doRegister(tenantName, email, password);
   };
 
