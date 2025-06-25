@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/tava
     username: postgres
-    password: postgres
+    password: root
   jpa:
     hibernate:
       ddl-auto: update
@@ -10,5 +10,5 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 jwt:
-  secret: changemepleasechangemepleasechangeme
+  secret: 30sWaycUHo1K1tOY0msMUvR7RXjCRitJ
   expiration-ms: 86400000

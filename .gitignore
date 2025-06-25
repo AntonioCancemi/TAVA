@@ -1,2 +1,69 @@
-node_modules
-package-lock.json
+
+# === GLOBAL ===
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+*.orig
+
+# === BACKEND ===
+/backend/.gradle/
+/backend/build/
+/backend/out/
+/backend/bin/
+/backend/.idea/
+/backend/.classpath
+/backend/.project
+/backend/.settings/
+/backend/*.iml
+/backend/*.log
+
+# === Gradle Wrapper ===
+/backend/gradle/wrapper/gradle-wrapper.jar
+
+# === IntelliJ & Eclipse ===
+*.iws
+*.ipr
+*.iml
+*.class
+
+# === FRONTEND ===
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.turbo/
+/frontend/.next/
+/frontend/.cache/
+/frontend/.eslintcache
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# === TEST & COVERAGE ===
+/coverage/
+/*.lcov
+/nyc_output/
+/frontend/jest-test-results.json
+/test-results/
+
+
+# === DOCKER / LOCAL SCRIPTS ===
+/docker-compose.override.yml
+/init-local.sh
+*.sh~
+*.pid
+*.db
+
+# === IDE / TOOL CONFIG ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === LOGS ===
+/logs
+*.log
