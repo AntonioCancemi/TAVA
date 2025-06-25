@@ -14,14 +14,14 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.7",
     "@types/react-redux": "^7.1.25",
-    "@types/react-router-dom": "^5.3.3",
-    "ts-loader": "^9.5.1",
     "typescript": "^5.2.2",
-    "webpack-cli": "^6.0.1"
+    "vite": "^5.2.0",
+    "@vitejs/plugin-react": "^4.2.0"
   },
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo 'no tests'"
   }
 }
