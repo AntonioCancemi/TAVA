@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { useAuth } from './useAuth';
+import { useAuth } from '../../hooks/useAuth';
+
+// Login form with basic validation and submit handling
 
 export default function LoginPage() {
   const { doLogin } = useAuth();
@@ -8,6 +10,7 @@ export default function LoginPage() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!email || !password) return;
     doLogin(email, password);
   };
 
